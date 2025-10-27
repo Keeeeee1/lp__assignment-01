@@ -1,0 +1,33 @@
+$custom01:1440px;
+$custom02:1240px;
+$pc:1080px;
+$tb:768px;
+$sp:375px;
+@mixin custom01{
+    @media screen and (max-width:($custom01)){
+        @content;
+    }
+}
+@mixin custom02{
+    @media screen and (max-width:($custom02)){
+        @content;
+    }
+}
+
+@mixin pc{
+    @media screen and (max-width:($pc)){
+        @content;
+    }
+}
+@mixin tb{
+    @media screen and (max-width:($tb)){
+        @content;
+    }
+}
+
+@mixin sp{
+    @media screen and (max-width:($sp)){
+        @content;
+    }
+}
+
