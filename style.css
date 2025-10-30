@@ -411,19 +411,25 @@ body.no-scroll {
   position: fixed;
   bottom: 0;
   z-index: 1000;
+  display: none;
 }
 .section__fixed__cta__wrapper {
+  height: 100px;
   padding: 15px;
   display: grid;
+  gap: 15px;
   grid-template-columns: 5fr 4fr;
 }
 .section__fixed__cta__left {
-  border: 1px solid #fff;
+  border: 1px solid #F8F8F8;
+  border-radius: 8px;
   display: grid;
-  grid-template-columns: 1fr 120px;
+  grid-template-columns: 3fr 2fr;
 }
 .section__fixed__cta__left__txt {
   text-align: center;
+  display: grid;
+  grid-template-rows: 1fr 3fr;
 }
 .section__fixed__cta__left__txt__top {
   background: #CCB504; /* 黄色リボン */
@@ -437,18 +443,18 @@ body.no-scroll {
 }
 .section__fixed__cta__left__txt__bottom {
   color: #F8F8F8;
+  background: transparent;
 }
 .section__fixed__cta__left__img {
-  height: 100%;
+  width: 100%;
 }
 .section__fixed__cta__left__img img {
   width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  max-height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .section__fixed__cta__right {
-  width: 40%;
   display: grid;
   grid-template-rows: 5fr 2fr;
 }
@@ -462,6 +468,11 @@ body.no-scroll {
 }
 .section__fixed__cta__right__img img {
   width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .section__fixed__cta {
+    display: block;
+  }
 }
 .section__cta {
   background-image: url(img/fv__bottom.png);
@@ -585,20 +596,38 @@ body.no-scroll {
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.16);
   margin-bottom: 30px;
   white-space: nowrap;
+  position: relative;
 }
-.section__cta__button__object__consultation::before {
+.section__cta__button__object__consultation::after {
+  position: absolute;
   content: "";
   display: block;
-  width: 10px;
-  height: 10px;
+  width: 20px;
+  height: 20px;
   background-image: url(img/cta__arrow.png);
   background-repeat: no-repeat;
+  background-size: contain;
+  bottom: 20%;
+  right: 10%;
 }
 .section__cta__button__object__request {
+  position: relative;
   padding: 30px 120px;
   border-radius: 88px;
   background-color: #C9C9C9;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.16);
+}
+.section__cta__button__object__request::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url(img/cta__arrow.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  bottom: 20%;
+  right: 10%;
 }
 @media screen and (max-width: 768px) {
   .section__cta__button__object {
