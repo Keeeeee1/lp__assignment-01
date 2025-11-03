@@ -96,32 +96,93 @@ function setUpGroup(groupEl) {
 }
 })();
 
-$(function(){
-    const $slider = $('.js-works-slider');
-    const $bar = $('.section__works__progress__bar');
 
-    // slick 初期化
-    $slider.on('init', function(event, slick){
-        updateProgress(0, slick);
+
+// $('.slick01').slick({
+//     autoplay:true,
+//     arrows:false,
+//     slidesToShow:1,
+//     centerMode:true,
+//     centerPadding:'25%',
+//     // dots:true,
+//     dotsClass: "slider-dots",
+//     pauseOnHover: false,
+//     pauseOnFocus: false
+    
+
+// jQuery + slick：セグメント内バーをアニメ
+$(function () {
+  const AUTOPLAY    = 3000;   // 1枚の見せ時間
+  const SLIDE_SPEED = 300;    // slickの切替アニメ時間（slickの speed と一致させる）
+  const $slider = $('.slick01');
+  const $steps  = $('.slider-steps');
+
+  // slick前にinitバインド
+  $slider.on('init', function (e, slick) {
+    const total = slick.slideCount;
+
+    // セグメントDOM（各seg内に .inner を入れる）
+    const $bar = $('<div class="slider-steps__bar" />').css('--steps', total);
+    for (let i = 0; i < total; i++) {
+      $bar.append('<span class="seg" data-index="'+i+'"><span class="inner"></span></span>');
+    }
+    const $counter = $('<div class="slider-steps__counter"><span class="num">1</span>/'+ total +'</div>');
+    $steps.empty().append($bar, $counter);
+
+    // 初回：index 0 をスタート（切替時間ぶんも足す）
+    startSegmentAnim(0, total, AUTOPLAY + SLIDE_SPEED);
+  });
+
+  // ここがポイント：切り替え完了後に次のセグメントをスタート
+  $slider.on('afterChange', function (e, slick, current) {
+    // 確定済みカラー
+    const $segs = $steps.find('.seg').removeClass('is-done');
+    $segs.each(function(i){ if (i < current) $(this).addClass('is-done'); });
+
+    // カウンタ
+    $('.slider-steps__counter .num').text(current + 1);
+
+    // 現在のセグメントを 0→100%（表示時間+切替時間）
+    startSegmentAnim(current, slick.slideCount, AUTOPLAY + SLIDE_SPEED);
+  });
+
+  // slick 初期化（speed を SLIDE_SPEED と一致させる）
+  $slider.slick({
+    autoplay: true,
+    autoplaySpeed: AUTOPLAY,
+    speed: SLIDE_SPEED,
+    arrows: false,
+    slidesToShow: 1,
+    centerMode: true,
+    centerPadding: '25%',
+    pauseOnHover: false,
+    pauseOnFocus: false
+  });
+
+  // クリックでジャンプ（任意）
+  $steps.on('click', '.seg', function(){
+    const idx = Number($(this).data('index'));
+    $slider.slick('slickGoTo', idx);
+  });
+
+  // 指定 index の .inner を 0→100% で伸ばす
+  function startSegmentAnim(index, total, durationMs){
+    const $segs   = $steps.find('.seg');
+    const $inners = $steps.find('.seg .inner');
+
+    // いったん全て即リセット（transitionを無効化）
+    $inners.each(function(){
+      this.style.transition = 'none';
+      this.style.width = '0%';
     });
 
-    $slider.slick({
-        slidesToShow: 3,          // PCは3枚見せ
-        slidesToScroll: 1,
-        infinite: true,          // 進捗計算を簡単にするため非無限
-        autoplay:true,
-        arrows: false,
-        dots: false,
-        autoplaySpeed: 0,          // “間隔ゼロ”で連続
-        speed:5000,
-        cssEase: 'linear',         // 直線的に滑り続ける
-        pauseOnHover: false,
-        pauseOnFocus: false,
-        swipe: false,              // 触って止まるのを避けたいなら
-
-        responsive: [
-        { breakpoint: 1080, settings: { slidesToShow: 2 } },
-        { breakpoint: 768,  settings: { slidesToShow: 1 } }
-        ]
+    const $targetInner = $segs.eq(index).find('.inner');
+    // 次フレームで transition を有効化して伸ばす
+    requestAnimationFrame(() => {
+      $targetInner.css('--dur', durationMs + 'ms');          // CSSの var(--dur) を上書き
+      $targetInner[0].style.transition = `width ${durationMs}ms linear`;
+      $targetInner[0].style.width = '100%';
     });
-})
+  }
+});
+

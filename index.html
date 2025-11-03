@@ -13,6 +13,9 @@
     <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPMincho&family=Forum&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet">
     <link rel="stylesheet"   href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
     <title>Lp-apple</title>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="swiper.css">
 
@@ -26,13 +29,13 @@
                 </div>
                 <h1><a href="#">APPLE HOME  <span>&mdash; 建築家住宅</span></a></h1>
             </div>
-        <button class="header__hamburger"
-                id="hamburger"
-                aria-label="メニューを開閉">
-            <span class="header__hamburger__bar"></span>
-            <span class="header__hamburger__bar"></span>
-            <span class="header__hamburger__bar"></span>
-        </button>
+            <button class="header__hamburger"
+                    id="hamburger"
+                    aria-label="メニューを開閉">
+                <span class="header__hamburger__bar"></span>
+                <span class="header__hamburger__bar"></span>
+                <span class="header__hamburger__bar"></span>
+            </button>
             <nav class="header__right" >
                 <ul class="header__right__items" id="header__menu">
                     <li class="header__right__item"><a href="#about">私たちの家づくり</a></li>
@@ -63,10 +66,14 @@
                 </div>
             </div>
         </div>
+        <div class="section__fv__cta"> 
+            <a class="section__fv__cta__phone" href="tel:0120107929">お電話はこちら</a>
+            <a class="section__fv__cta__request" href="#request">資料請求</a>
+        </div>
     </section>
     <section class="section__fixed__cta">
         <div class="section__fixed__cta__wrapper">
-            <div class="section__fixed__cta__left">
+            <a href="#consultation" class="section__fixed__cta__left">
                 <div class="section__fixed__cta__left__txt">
                     <div class="section__fixed__cta__left__txt__top">ご来場で豪華特典！</div>
                     <div class="section__fixed__cta__left__txt__bottom">個別相談予約</div>
@@ -74,8 +81,8 @@
                 <div class="section__fixed__cta__left__img">
                     <img src="img/cta__sp__consultation.png">
                 </div>
-            </div>
-            <div class="section__fixed__cta__right">
+            </a>
+            <a href="#request" class="section__fixed__cta__right">
                 <div class="section__fixed__cta__right__top">理想の家づくりに</div>
                 <div class="section__fixed__cta__right__bottom">
                     <div class="section__fixed__cta__right__bottom__txt">資料請求</div>
@@ -83,7 +90,7 @@
                         <img src="img/cta__sp__book.png">
                     </div>
                 </div>
-            </div>
+            </a>
         </div>
     </section>
     <section class="section__cta" >
@@ -97,11 +104,11 @@
                     <img src="img/cta__book.png">
                 </div>
             </div>
-            <div class="section__cta__button">
-                <p class="section__cta__button__title">ご来場で豪華特典も！</p>
-                <div class="section__cta__button__object">
-                    <div class="section__cta__button__object__consultation"><a href="#consultation">個別相談予約</a></div>
-                    <div class="section__cta__button__object__request"><a href="#request">資料請求</a></div>
+            <div class="section__cta__request">
+                <p class="section__cta__request__title">ご来場で豪華特典も！</p>
+                <div class="section__cta__request__object">
+                    <div class="section__cta__request__object__consultation"><a href="#consultation">個別相談予約</a></div>
+                    <div class="section__cta__request__object__request"><a href="#request">資料請求</a></div>
                 </div>
             </div>
         </div>
@@ -168,12 +175,12 @@
         <div class=" common__inner">
             <p class="section__point__design__number">01</p>
             <div class="section__point__design__title">
+                <div class="section__point__design__title__img__pen">
+                    <img src="img/design__pen.png">
+                </div>
                 <div class="section__point__design__title__txt">
                     <p class="section__point__design__title__txt__main">design</p>
                     <p class="section__point__design__title__txt__sub">デザイン</p>
-                </div>
-                <div class="section__point__design__title__img">
-                    <img src="img/point-01__couple.png">
                 </div>
             </div>
             <div class="section__point__design__img">
@@ -314,12 +321,12 @@
     <section class="section__land-cost common__inner">
         <p class="section__point__land-cost__number">02</p>
         <div class="section__point__land-cost__title">
+            <div class="section__point__land-cost__title__img__map">
+                <img src="img/land-cost__map.png">
+            </div>
             <div class="section__point__land-cost__title__txt">
                 <p class="section__point__land-cost__title__txt__main">land cost cut</p>
                 <p class="section__point__land-cost__title__txt__sub">土地をお手頃価格で</p>
-            </div>
-            <div class="section__point__land-cost__title__img">
-                <img src="img/land-cost-02__couple.png">
             </div>
         </div>
         <div class="section__point__land-cost__img">
@@ -459,12 +466,12 @@
         <div class="common__inner">
             <p class="section__point__performance__number">03</p>
             <div class="section__point__performance__title">
+                <div class="section__point__performance__title__img__chair">
+                    <img src="img/performance-chair.png">
+                </div>
                 <div class="section__point__performance__title__txt">
                     <p class="section__point__performance__title__txt__main">performance</p>
                     <p class="section__point__performance__title__txt__sub">安心と快適性</p>
-                </div>
-                <div class="section__point__performance__title__img">
-                    <img src="img/performance-03__family.png">
                 </div>
             </div>
             <div class="section__point__performance__img">
@@ -512,12 +519,12 @@
         <div class="common__inner">
             <p class="section__point__total-cost__number">04</p>
             <div class="section__point__total-cost__title">
+                <div class="section__point__total-cost__title__img__money">
+                    <img src="img/total-cost__money.png">
+                </div>
                 <div class="section__point__total-cost__title__txt">
                     <p class="section__point__total-cost__title__txt__main">total cost cut</p>
                     <p class="section__point__total-cost__title__txt__sub">土地をお手頃価格で</p>
-                </div>
-                <div class="section__point__total-cost__title__img">
-                    <img src="img/total-cost-04__family.png">
                 </div>
             </div>
             <div class="section__point__total-cost__img">
@@ -562,11 +569,11 @@
                     <img src="img/cta__book.png">
                 </div>
             </div>
-            <div class="section__cta__button">
-                <p class="section__cta__button__title">ご来場で豪華特典も！</p>
-                <div class="section__cta__button__object">
-                    <p class="section__cta__button__object__consultation"><a href="#consultation">個別相談予約</a></p>
-                    <p class="section__cta__button__object__request"><a href="#request">資料請求</a></p>
+            <div class="section__cta__request">
+                <p class="section__cta__request__title">ご来場で豪華特典も！</p>
+                <div class="section__cta__request__object">
+                    <p class="section__cta__request__object__consultation"><a href="#consultation">個別相談予約</a></p>
+                    <p class="section__cta__request__object__request"><a href="#request">資料請求</a></p>
                 </div>
             </div>
         </div>
@@ -576,23 +583,19 @@
             <p class="section__works__txt__sub">works.</p>
             <p class="section__works__txt__main">建築実例</p>
         </div>
-        <div class="section__works__slider js-works-slider">
-            <div class="section__works__slide"><img src="img/works-01.png" alt=""></div>
-            <div class="section__works__slide"><img src="img/works-02.png" alt=""></div>
-            <div class="section__works__slide"><img src="img/works-03.png" alt=""></div>
-            <div class="section__works__slide"><img src="img/works-04.png" alt=""></div>
-            <div class="section__works__slide"><img src="img/works-05.png" alt=""></div>
-            <div class="section__works__slide"><img src="img/works-06.png" alt=""></div>
-            <div class="section__works__slide"><img src="img/works-07.png" alt=""></div>
-            <div class="section__works__slide"><img src="img/works-08.png" alt=""></div>
+        <div class="slick01__set">
+            <div class="slick01">
+                <div class="section__works__slide"><img src="img/works-01.png" alt=""></div>
+                <div class="section__works__slide"><img src="img/works-02.png" alt=""></div>
+                <div class="section__works__slide"><img src="img/works-03.png" alt=""></div>
+                <div class="section__works__slide"><img src="img/works-04.png" alt=""></div>
+                <div class="section__works__slide"><img src="img/works-05.png" alt=""></div>
+                <div class="section__works__slide"><img src="img/works-06.png" alt=""></div>
+                <div class="section__works__slide"><img src="img/works-07.png" alt=""></div>
+                <div class="section__works__slide"><img src="img/works-08.png" alt=""></div>
+            </div>
+            <div class="slider-steps"></div>
         </div>
-        <div class="section__works__progress">
-            <span class="section__works__progress__bar" style="width:0%"></span>
-        </div>
-    </section>
-
-
-
     </section>
     <section class="section__remind__point">
         <div class="section__remind__point__txt common__inner-2">
@@ -757,11 +760,12 @@
                 よろしくお願いいたします。
             </p>
             <div class="section__form__option">
-                    <button class="section__form__option__object is-active"
+                    <button class="section__form__option__object section__form__option__object__left is-active"
                     type="button"    
                     araia-pressed="true"
                     >
-                        <img src="img/form__consult.png">
+                        <img src="img/form__consult.png" >
+                        <p class="section__form__option__object__gift">来場特典あり!</p>
                         <div class="section__form__consult__button">個別相談予約</div>
                     </button>
                     <button class="section__form__option__object"
@@ -896,7 +900,7 @@
     <section class="section__access-map">
         <div class="common__inner">
             <div class="section__access-map__eyebrow">
-                <p class="section__access-map__eyebrow__main">access map</p>
+                <p class="section__access-map__eyebrow__main">access map.</p>
                 <p class="section__access-map__eyebrow__sub">店舗情報</p>
             </div>
             <div class="section__access-map__list">
@@ -953,7 +957,7 @@
         <div class="section__footer__top">
             <img src="img/footer__logo.png">
             <p class="section__footer__top__title">apple home</p>
-            <p class="section__footer__top__title__small">━建築家住宅</p>
+            <p class="section__footer__top__title__small">&mdash;建築家住宅</p>
         </div>
         <div class="section__footer__bottom">
             <p>Copyright &copy; アップルホーム Corp. All rights reserved.</p>
