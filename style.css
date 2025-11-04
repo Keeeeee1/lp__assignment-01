@@ -458,12 +458,12 @@
   color: #FFF;
   text-align: center;
   font-family: "Noto Sans JP";
-  font-size: 23px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: 28px; /* 121.739% */
   letter-spacing: 2.3px;
-  padding: 30px 25px 90px 25px;
+  padding: 30px 10px 70px 10px;
   background-color: #24385D;
   border-radius: 20px 0 0 20px;
 }
@@ -483,12 +483,12 @@
   writing-mode: vertical-rl;
   text-align: center;
   font-family: "Noto Sans JP";
-  font-size: 23px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: 28px; /* 121.739% */
   letter-spacing: 2.3px;
-  padding: 30px 25px 80px 25px;
+  padding: 30px 10px 60px 10px;
   background-color: #24385D;
   border-radius: 20px 0 0 20px;
 }
@@ -872,7 +872,7 @@
   grid-template-columns: 2fr 3fr;
   gap: 5%;
   margin-left: auto;
-  padding: 48px;
+  padding-left: 48px;
 }
 .section__our-building__left {
   padding-bottom: 28px;
