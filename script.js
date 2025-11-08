@@ -21,6 +21,7 @@ const thumbs = new Swiper(thumbsEl, {
 const main = new Swiper(mainEl, {
     allowTouchMove: false, // メインもドラッグで動かしたいなら true
     speed: 0,
+    slidesPerView:1,
     thumbs: { swiper: thumbs }
 });
 });
@@ -96,19 +97,6 @@ function setUpGroup(groupEl) {
 }
 })();
 
-
-
-// $('.slick01').slick({
-//     autoplay:true,
-//     arrows:false,
-//     slidesToShow:1,
-//     centerMode:true,
-//     centerPadding:'25%',
-//     // dots:true,
-//     dotsClass: "slider-dots",
-//     pauseOnHover: false,
-//     pauseOnFocus: false
-    
 
 // jQuery + slick：セグメント内バーをアニメ
 $(function () {
