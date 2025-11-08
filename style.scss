@@ -72,7 +72,12 @@ body{
 .swiper-slide{
   aspect-ratio: 800 / 530;       /* 他画像に合わせた比率に。必要なら変更 */
     max-width: 800px;
+    @include custom02{
+        width:100%;
+        max-width: 100%;
+    }
 }
+
 .swiper-slide__bg-gray{
     background-color: #E5E5E5;
 }
@@ -152,10 +157,14 @@ body{
     &__logo{
         max-width:447px;
         width:25vw;
+        @include custom02{
+            width:447px;
+        }
         img{
             width:100%;
         }
     }
+
     &__inner{
         padding:24px 60px;
         height:100%;
@@ -221,7 +230,7 @@ body{
             font-style: normal;
             font-weight: 400;
             line-height: normal;
-            letter-spacing: 2.5px;
+            letter-spacing: 0.1rem;
             & span{
             color: #24385D;
             -webkit-text-stroke-width: 0.3px;
@@ -231,7 +240,7 @@ body{
             font-style: normal;
             font-weight: 400;
             line-height: normal;
-            letter-spacing: 2.5px;
+            letter-spacing: 0.1rem;
             }
             @include tb{
                 font-size: 14px;
@@ -260,8 +269,8 @@ body{
         font-size: 16px;
         font-style: normal;
         font-weight: 400;
-        line-height: 22px; /* 122.222% */
-        letter-spacing: 1.44px;
+        line-height: 122.222%;
+        letter-spacing: 0.1rem;
     }
     &__right__item{
         >.info-request{
@@ -365,8 +374,8 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                 font-size: 14px;
                 font-style: normal;
                 font-weight: 700;
-                line-height: 86px; /* 614.286% */
-                letter-spacing: 2.8px;
+                line-height:614.286%; 
+                letter-spacing: 0.2rem;
                 margin-top:8px;
             }
             &__bottom{
@@ -375,8 +384,8 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                     font-family: "Noto Sans JP";
                     font-size: 20px;
                     font-weight: 400;
-                    line-height: 44px; /* 220% */
-                    letter-spacing: 4px;
+                    line-height:  220%;
+                    letter-spacing: 0.2rem;
                     margin-top:76px;
                     margin-bottom: 16px;
                 }
@@ -399,8 +408,8 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                 font-size: 14px;
                 font-style: normal;
                 font-weight: 700;
-                line-height: 24px; /* 614.286% */
-                letter-spacing: 2.8px;
+                line-height: 614.286%;
+                letter-spacing: 0.2rem;
                 text-transform: uppercase;
             }
         }
@@ -421,8 +430,8 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                 font-size: 23px;
                 font-style: normal;
                 font-weight: 500;
-                line-height: 28px; /* 121.739% */
-                letter-spacing: 5px;
+                line-height: 121.739%;
+                letter-spacing: 0.2rem;
                 padding:40px 23px 90px 23px;
                 background-color: #24385D;
                 border-radius: 20px 0  0 20px ;
@@ -446,8 +455,8 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                 font-size: 23px;
                 font-style: normal;
                 font-weight: 500;
-                line-height: 28px; /* 121.739% */
-                letter-spacing: 5px;
+                line-height:  121.739% ;
+                letter-spacing: 0.2rem;
                 padding:55px 23px 100px 23px;
                 background-color: #24385D;
                 border-radius: 20px 0 0 20px ;
@@ -496,7 +505,7 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                     &__main{
                         & p{
                             font-size:25px;
-                            letter-spacing: 2.3px;
+                            letter-spacing: 0.1rem;
                             & span{
                                 font-size: 21px;
                             }
@@ -549,7 +558,7 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                         background: transparent;
                         // display:block;
                         padding-top:15px;
-                        letter-spacing: 1.2px;
+                        letter-spacing: 0.06rem;
                         &::before{
                             content: "";
                             position: absolute;
@@ -624,7 +633,7 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                 height:70%;
                 color:#F8F8F8;
                 &__txt{
-                    letter-spacing: 1.2px;
+                    letter-spacing: 0.06rem;
                     padding-bottom:32px;
                     text-wrap: no-wrap;
                 }
@@ -688,8 +697,8 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                 font-size: 32px;
                 font-style: normal;
                 font-weight: 700;
-                line-height: 64px; /* 268.75% */
-                letter-spacing: 6.4px;
+                line-height:  268.75%;
+                letter-spacing: 0.2rem;
                 // border-bottom:1px solid #FFF;
                 display:inline-block;
                 @include tb{
@@ -701,8 +710,8 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                     font-size: 14px;
                     font-style: normal;
                     font-weight: 500;
-                    line-height: 32px; /* 228.571% */
-                    letter-spacing: 1.4px;
+                    line-height: 228.571%;
+                    letter-spacing: 0.1rem;
                 }
                 &__border{
                     width:76%;
@@ -715,8 +724,8 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                     font-size: 16px;
                     font-style: normal;
                     font-weight: 400;
-                    line-height: 27px; /* 168.75% */
-                    letter-spacing: 0.8px;
+                    line-height:  168.75%;
+                    letter-spacing: 0.05rem;
                     white-space: nowrap;
                     margin-bottom: 16px;
                     @include tb{
@@ -746,8 +755,8 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                 font-size: 20px;
                 font-style: normal;
                 font-weight: 500;
-                line-height: 22px; /* 110% */
-                letter-spacing: 2px;
+                line-height:  110% ;
+                letter-spacing: 0.1rem;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -867,8 +876,8 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                     font-size: 24px;
                     font-style: normal;
                     font-weight: 700;
-                    line-height: 86px; /* 358.333% */
-                    letter-spacing: 4.8px;
+                    line-height:358.333%;
+                    letter-spacing:0.2rem;
                     margin-top:135px;
                     text-transform: uppercase;
                 }
@@ -878,8 +887,8 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                     font-size: 14px;
                     font-style: normal;
                     font-weight: 500;
-                    line-height: 32px; /* 228.571% */
-                    letter-spacing: 1.4px;
+                    line-height:228.571%;
+                    letter-spacing: 0.1rem;
                 }
             }
             &__title{
@@ -888,8 +897,8 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                 font-size: 40px;
                 font-style: normal;
                 font-weight: 400;
-                line-height: 80px; /* 200% */
-                letter-spacing: 4px;
+                line-height: 200%;
+                letter-spacing: 0.1rem;
                 margin:125px 0 75px 0;
                 // white-space: nowrap;
             }
@@ -899,8 +908,8 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                 font-size: 20px;
                 font-style: normal;
                 font-weight: 400;
-                line-height: 48px; /* 240% */
-                letter-spacing: 1px;
+                line-height: 240%;
+                letter-spacing: 0.05rem;
                 width:566px;
             }
         }
@@ -966,8 +975,7 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                 font-size: 24px;
                 font-style: normal;
                 font-weight: 700;
-                // line-height: 86px; /* 358.333% */
-                letter-spacing: 4.8px;
+                letter-spacing: 0.2rem;
                 text-transform: uppercase;
                 margin-bottom: 8px;
 
@@ -978,8 +986,8 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                 font-size: 14px;
                 font-style: normal;
                 font-weight: 500;
-                line-height: 32px; /* 228.571% */
-                letter-spacing: 1.4px;
+                line-height: 228.571%;
+                letter-spacing: 0.1rem;
             }
         }
         &__title{
@@ -988,8 +996,8 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
             font-size: 40px;
             font-style: normal;
             font-weight: 400;
-            line-height: 72px; /* 180% */
-            letter-spacing: 6px;
+            line-height:180%;
+            letter-spacing: 0.15rem;
             margin-top:32px;
             margin-bottom:24px;
             @include tb{
@@ -1012,8 +1020,8 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                 font-size: 16px;
                 font-style: normal;
                 font-weight: 500;
-                line-height: 32px; /* 200% */
-                letter-spacing: 0.8px;
+                line-height: 200%;
+                letter-spacing: 0.05rem;
             }
         }
         &__icon{
@@ -1069,7 +1077,7 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                 font-style: normal;
                 font-weight: 700;
                 line-height: 200%; 
-                letter-spacing: 6.4px;
+                letter-spacing: 0.2rem;
                 border-bottom:2px solid #3A3A3A;
             }
             &__title{
@@ -1099,7 +1107,7 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                         font-size: 32px;
                         font-style: normal;
                         font-weight: 700;
-                        letter-spacing: 6.4px;
+                        letter-spacing: 0.2rem;
                         text-transform: uppercase;
                     }
                     &__sub{
@@ -1108,8 +1116,8 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                         font-size: 14px;
                         font-style: normal;
                         font-weight: 500;
-                        line-height: 32px; /* 228.571% */
-                        letter-spacing: 1.4px;
+                        line-height:228.571%;
+                        letter-spacing: 0.1rem;
                     }
                 }
                 &__img__pen{
@@ -1171,8 +1179,8 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                         font-size: 16px;
                         font-style: normal;
                         font-weight: 700;
-                        line-height: 86px; /* 537.5% */
-                        letter-spacing: 3.2px;  
+                        line-height:537.5%;
+                        letter-spacing: 0.2rem;  
                         text-transform: uppercase;
                     }
                     &__main{
@@ -1182,8 +1190,8 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                         font-size: 39px;
                         font-style: normal;
                         font-weight: 400;
-                        line-height: 48px; /* 123.077% */
-                        letter-spacing: 3.9px;   
+                        line-height:123.077%;
+                        letter-spacing: 0.1rem;   
                     }
                 }
                 &__gallery{
@@ -1242,7 +1250,7 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                                 font-size: 16px;
                                 font-style: normal;
                                 font-weight: 500;
-                                letter-spacing: 0.8px;
+                                letter-spacing: 0.05rem;
                                 padding-bottom:14px;
                                 & p{
                                     padding:0;
@@ -1276,6 +1284,7 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                                 max-width:250px;
                                 width:100%;
                                 height:auto;
+                                aspect-ratio: 170 / 115;
                                 // max-width:none;
                             }
                             &__desc{
@@ -1318,8 +1327,8 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                         font-size: 24px;
                         font-style: normal;
                         font-weight: 500;
-                        line-height: 40px; /* 166.667% */
-                        letter-spacing: 2.4px;
+                        line-height:166.667%;
+                        letter-spacing: 0.1rem;
                         padding:54px 30px 36px 0;
                     }
                     &__sub{
@@ -1328,8 +1337,8 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                         font-size: 16px;
                         font-style: normal;
                         font-weight: 500;
-                        line-height: 32px; /* 200% */
-                        letter-spacing: 0.8px;
+                        line-height:200%;
+                        letter-spacing: 0.05rem;
                         padding-right:12px;
                     }
                 }
@@ -1351,7 +1360,7 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                 font-style: normal;
                 font-weight: 700;
                 line-height: 200%; 
-                letter-spacing: 6.4px;
+                letter-spacing: 0.2rem;
                 border-bottom:2px solid #3A3A3A;
                 display: inline-block;
                 margin-bottom:54px;
@@ -1366,12 +1375,12 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                     &::after{
                         content: "";
                         position:absolute;
-                        width:120px;
+                        width:130px;
                         height:150px;
                         display: block;
                         background-image: url(img/land-cost-02__couple.png);
                         background-size: contain;
-                        top:-100%;
+                        top:-120%;
                         right:0;
                         // transform: translateX(-50%);
                         background-repeat: no-repeat;
@@ -1382,7 +1391,7 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                         font-size: 32px;
                         font-style: normal;
                         font-weight: 700;
-                        letter-spacing: 6.4px;
+                        letter-spacing: 0.2rem;
                         text-transform: uppercase;
                     }
                     &__sub{
@@ -1391,8 +1400,8 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                         font-size: 14px;
                         font-style: normal;
                         font-weight: 500;
-                        line-height: 32px; /* 228.571% */
-                        letter-spacing: 1.4px;
+                        line-height: 228.571%;
+                        letter-spacing: 0.1rem;
                     }
                 }
                 &__img__map{
@@ -1415,8 +1424,8 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                     font-size: 24px;
                     font-style: normal;
                     font-weight: 500;
-                    line-height: 50px; /* 208.333% */
-                    letter-spacing: 2.4px;
+                    line-height:208.333%;
+                    letter-spacing: 0.1rem;
                     margin-top:66px;
                     margin-bottom:33px;
                 }
@@ -1426,8 +1435,8 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                     font-size: 16px;
                     font-style: normal;
                     font-weight: 500;
-                    line-height: 32px; /* 200% */
-                    letter-spacing: 0.8px;
+                    line-height: 200%;
+                    letter-spacing:0.05rem;
                 }
             }
             &__works{
@@ -1478,7 +1487,7 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                 font-style: normal;
                 font-weight: 700;
                 line-height: 200%;
-                letter-spacing: 6.4px;
+                letter-spacing: 0.2rem;
                 border-bottom:2px solid #3A3A3A;
                 display: inline-block;
                 margin-bottom: 32px;
@@ -1491,12 +1500,12 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                 &::after{
                     content: "";
                     position:absolute;
-                    width:120px;
+                    width:160px;
                     height:150px;
                     display: block;
                     background-image: url(img/performance-03__family.png);
                     background-size: contain;
-                    top:-50%;
+                    top:-80%;
                     right:0;
                     // transform: translateX(-50%);
                     background-repeat: no-repeat;
@@ -1509,7 +1518,7 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                         font-size: 32px;
                         font-style: normal;
                         font-weight: 700;
-                        letter-spacing: 6.4px;
+                        letter-spacing: 0.2rem;
                         text-transform: uppercase;
                     }
                     &__sub{
@@ -1518,8 +1527,8 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                         font-size: 14px;
                         font-style: normal;
                         font-weight: 500;
-                        line-height: 32px; /* 228.571% */
-                        letter-spacing: 1.4px;
+                        line-height:228.571%;
+                        letter-spacing: 0.1rem;
                     }
 
                 }
@@ -1543,8 +1552,8 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                     font-size: 24px;
                     font-style: normal;
                     font-weight: 500;
-                    line-height: 50px; /* 208.333% */
-                    letter-spacing: 2.4px;
+                    line-height: 208.333%;
+                    letter-spacing: 0.1rem;
                     margin-top:66px;
                     margin-bottom:33px;
                 }
@@ -1554,8 +1563,8 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                     font-size: 16px;
                     font-style: normal;
                     font-weight: 500;
-                    line-height: 32px; /* 200% */
-                    letter-spacing: 0.8px;
+                    line-height:200%;
+                    letter-spacing: 0.05rem;
                     margin-bottom:100px;
                 }
             }
@@ -1586,22 +1595,6 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                 }
             }
             &__bottom{
-                // &__items{
-                //     display:flex;
-                //     flex-wrap: wrap;
-                //     justify-content: center;
-                //     gap:60px;
-                // }
-                // &__item{
-                //     width:50%;
-                //     max-width: 570px;
-                //     & img{
-                //         width:100%;
-                //     }
-                //     @include tb{
-                //         width:100%;
-                //     }
-                // }
                 &__items{
                     display: grid;
                     grid-template-columns: repeat(2,1fr);
@@ -1626,8 +1619,8 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                             font-size: 24px;
                             font-style: normal;
                             font-weight: 500;
-                            line-height: 40px;
-                            letter-spacing: 2.4px;
+                            line-height: 166%;
+                            letter-spacing: 0.1rem;
                             margin-top:54px;
                             margin-bottom: 36px;
                         }
@@ -1637,8 +1630,8 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                             font-size: 16px;
                             font-style: normal;
                             font-weight: 500;
-                            line-height: 32px; /* 200% */
-                            letter-spacing: 0.8px;                            
+                            line-height: 200%;
+                            letter-spacing: 0.05rem;                            
                         }
                     }
                 }
@@ -1657,7 +1650,7 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                 font-style: normal;
                 font-weight: 700;
                 line-height: 200%;
-                letter-spacing: 6.4px;
+                letter-spacing: 0.2rem;
                 margin-bottom: 32px;
             }
             &__title{
@@ -1669,12 +1662,12 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                 &::after{
                     content: "";
                     position:absolute;
-                    width:120px;
+                    width:150px;
                     height:150px;
                     display: block;
                     background-image: url(img/total-cost-04__family.png);
                     background-size: contain;
-                    top:-50%;
+                    top:-80%;
                     right:0;
                     // transform: translateX(-50%);
                     background-repeat: no-repeat;
@@ -1686,7 +1679,7 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                         font-size: 32px;
                         font-style: normal;
                         font-weight: 700;
-                        letter-spacing: 6.4px;
+                        letter-spacing: 0.1rem;
                         text-transform: uppercase;
                     }
                     &__sub{
@@ -1695,8 +1688,8 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                         font-size: 14px;
                         font-style: normal;
                         font-weight: 500;
-                        line-height: 32px; /* 228.571% */
-                        letter-spacing: 1.4px;
+                        line-height: 228.571%;
+                        letter-spacing: 0.1rem;
                     }
                 }
                 &__img__money{
@@ -1719,8 +1712,8 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                     font-size: 24px;
                     font-style: normal;
                     font-weight: 500;
-                    line-height: 50px; /* 208.333% */
-                    letter-spacing: 2.4px;
+                    line-height: 208.333%; 
+                    letter-spacing: 0.1rem;
                     margin-top:66px;
                     margin-bottom:33px;
                 }
@@ -1730,8 +1723,8 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                     font-size: 16px;
                     font-style: normal;
                     font-weight: 500;
-                    line-height: 32px; /* 200% */
-                    letter-spacing: 0.8px;
+                    line-height: 200%;
+                    letter-spacing:0.05rem;
                     margin-bottom:100px;
                 }
             }
@@ -1762,8 +1755,8 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                             font-size: 24px;
                             font-style: normal;
                             font-weight: 500;
-                            line-height: 40px;
-                            letter-spacing: 2.4px;
+                            line-height: 166%;
+                            letter-spacing: 0.1rem;
                             margin-top:54px;
                             margin-bottom: 36px;
                         }
@@ -1773,8 +1766,8 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                             font-size: 16px;
                             font-style: normal;
                             font-weight: 500;
-                            line-height: 32px; /* 200% */
-                            letter-spacing: 0.8px;                            
+                            line-height: 200%;
+                            letter-spacing: 0.05rem;                            
                         }
                     }
                 }
@@ -1819,8 +1812,8 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                 font-size: 16px;
                 font-style: normal;
                 font-weight: 700;
-                line-height: 86px; /* 537.5% */
-                letter-spacing: 3.2px;
+                line-height:537.5%;
+                letter-spacing: 0.2rem;
                 text-transform: uppercase;
             }
             &__main{
@@ -1830,8 +1823,8 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                 font-size: 39px;
                 font-style: normal;
                 font-weight: 400;
-                line-height: 48px; /* 123.077% */
-                letter-spacing: 3.9px;
+                line-height:123.077%;
+                letter-spacing: 0.1rem;
                 margin-bottom: 80px;
             }
         }
@@ -1858,7 +1851,7 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                         font-style: normal;
                         font-weight: 500;
                         line-height:  228.571% ;
-                        letter-spacing: 1.4px;
+                        letter-spacing: 0.1rem;
                     }
                     &__main{
                         color: #000;
@@ -1867,7 +1860,7 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                         font-size: 24px;
                         font-style: normal;
                         font-weight: 700;
-                        letter-spacing: 4.8px;
+                        letter-spacing: 0.2rem;
                         margin-bottom:12px;
                         text-transform: uppercase;
                     }
@@ -1879,8 +1872,8 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                     font-size: 40px;
                     font-style: normal;
                     font-weight: 400;
-                    line-height: 72px; /* 180% */
-                    letter-spacing: 6px;
+                    line-height: 180%;
+                    letter-spacing:0.15rem;
                     max-width:800px;
                     margin:0 auto;
                     padding:60px 0 120px 0;
@@ -1921,8 +1914,8 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                             font-size: 24px;
                             font-style: normal;
                             font-weight: 500;
-                            line-height: 40px; /* 166.667% */
-                            letter-spacing: 2.4px;
+                            line-height: 166.667%;
+                            letter-spacing: 0.1rem;
                         }
                         &__sub{
                             color: #3A3A3A;
@@ -1930,8 +1923,8 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                             font-size: 16px;
                             font-style: normal;
                             font-weight: 500;
-                            line-height: 32px; /* 200% */
-                            letter-spacing: 0.8px;
+                            line-height: 200%;
+                            letter-spacing: 0.05rem;
                         }
                     }
                     @include tb{
@@ -1960,7 +1953,7 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                 font-size: 24px;
                 font-style: normal;
                 font-weight: 700;
-                letter-spacing: 4.8px;
+                letter-spacing: 0.2rem;
                 text-transform: uppercase;
             }
             &__sub{
@@ -1970,8 +1963,8 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                 font-size: 14px;
                 font-style: normal;
                 font-weight: 500;
-                line-height: 32px; /* 228.571% */
-                letter-spacing: 1.4px;
+                line-height:228.571%;
+                letter-spacing: 0.1rem;
             }
         }
         &__title{
@@ -1981,8 +1974,8 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
             font-size: 40px;
             font-style: normal;
             font-weight: 400;
-            line-height: 72px; /* 180% */
-            letter-spacing: 6px;
+            line-height:180%;
+            letter-spacing: 0.15rem;
             padding:54px 0 50px 0;
             &__border{
                 text-align: center;
@@ -1999,14 +1992,18 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
             font-size: 16px;
             font-style: normal;
             font-weight: 500;
-            line-height: 32px; /* 200% */
-            letter-spacing: 0.8px;
+            line-height: 200%;
+            letter-spacing: 0.05rem;
             margin: 35px 0 120px 0;
         }
         &__list{
             display: flex;
             justify-content: center;
-            gap:135px;
+            gap:7vw;
+            @include custom02{
+                padding:0 24px;
+                gap:4vw;
+            }
             &__item{
                 width:100%;
                 max-width: 311px;
@@ -2034,11 +2031,15 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                     font-size: 24px;
                     font-style: normal;
                     font-weight: 500;
-                    line-height: 40px; /* 166.667% */
-                    letter-spacing: 2.4px;
+                    line-height:166.667%;
+                    letter-spacing: 0.1rem;
                     border-top:1px solid #727171;
                     border-bottom:1px solid #727171;
                     padding:26px 0 20px 0;
+                    @include custom02{
+                        font-size: 19px;
+                        letter-spacing:0.1rem;
+                    }
                 }
                 &__desc{
                     width:100%;
@@ -2047,12 +2048,13 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                     font-size: 16px;
                     font-style: normal;
                     font-weight: 400;
-                    line-height: 32px; /* 200% */
-                    letter-spacing: 0.8px;padding-top: 36px;
+                    line-height:200%;
+                    letter-spacing: 0.05rem;
+                    padding-top: 36px;
                 }
             }
             @include tb{
-                grid-template-columns: 1fr;
+                flex-direction:column;
                 &__item{
                     max-width:480px;
                     width:100%;
@@ -2080,8 +2082,8 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
             font-size: 40px;
             font-style: normal;
             font-weight: 400;
-            line-height: 72px; /* 180% */
-            letter-spacing: 6px;
+            line-height: 180% ;
+            letter-spacing: 0.15rem;
             border-bottom:1px solid #fff;
             padding-bottom:16px;
         }
@@ -2095,20 +2097,6 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
         &__lead{
             text-align: center;
             margin-bottom: 45px;
-            padding-right:16px;
-            position: relative;
-            &::after{
-                content:"";
-                background-image: url(img/visitor-benefit__attention.png);
-                position: absolute;
-                width:16px;
-                height:16px;
-                background-repeat: no-repeat;
-                background-size: contain;
-                right:0;
-                top:30%;
-                display: block;
-            }
             .br-pc{
                 display: none;
             }
@@ -2120,8 +2108,8 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                     font-size: 30px;
                     font-style: normal;
                     font-weight: 500;
-                    line-height: 36px; /* 120% */
-                    letter-spacing: 3px;
+                    line-height: 120%;
+                    letter-spacing: 0.1rem;
                 }
                 &:nth-of-type(2){
                     color: #CCB504;
@@ -2138,8 +2126,8 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                     font-size: 27px;
                     font-style: normal;
                     font-weight: 700;
-                    line-height: 37px; /* 137.037% */
-                    letter-spacing: 2.7px;
+                    line-height:137.037%;
+                    letter-spacing: 0.1rem;
                 }
                 &:nth-of-type(4){
                     color: #FFF;
@@ -2148,8 +2136,24 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                     font-size: 30px;
                     font-style: normal;
                     font-weight: 500;
-                    line-height: 36px; /* 120% */
-                    letter-spacing: 3px;
+                    line-height: 120%;
+                    letter-spacing: 0.1rem;
+                }
+            }
+            &__attention{
+                position: relative;
+                padding-right:12px;
+                &::after{
+                    content:"";
+                    background-image: url(img/visitor-benefit__attention.png);
+                    position: absolute;
+                    width:16px;
+                    height:16px;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    right:0;
+                    top:-35%;
+                    display: block;
                 }
             }
         }
@@ -2164,8 +2168,8 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
             font-size: 14px;
             font-style: normal;
             font-weight: 400;
-            line-height: 27px; /* 192.857% */
-            letter-spacing: 0.7px;
+            line-height:192.857%;
+            letter-spacing: 0.05rem;
             &__scroll{
                 width:100%;
                 height:100%;
@@ -2190,7 +2194,7 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                 font-size: 24px;
                 font-style: normal;
                 font-weight: 700;
-                letter-spacing: 4.8px;
+                letter-spacing: 0.2rem;
                 // margin-top: 150px;
                 text-transform: uppercase;
             }
@@ -2201,8 +2205,8 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                 font-size: 14px;
                 font-style: normal;
                 font-weight: 500;
-                line-height: 32px; /* 228.571% */
-                letter-spacing: 1.4px;
+                line-height:228.571%;
+                letter-spacing:0.1rem;
                 margin-top:16px;
                 margin-bottom:40px;
             }
@@ -2214,8 +2218,8 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
             font-size: 16px;
             font-style: normal;
             font-weight: 500;
-            line-height: 32px; /* 200% */
-            letter-spacing: 0.8px;
+            line-height: 200%;
+            letter-spacing: 0.05rem;
             margin-bottom:120px;
         }
         &__option{
@@ -2239,8 +2243,8 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                     font-size: 16px;
                     font-style: normal;
                     font-weight: 700;
-                    line-height: 32px; /* 200% */
-                    letter-spacing: 1.6px;
+                    line-height: 200%;
+                    letter-spacing: 0.1rem;
                     top:0;
                     left:0;
                     padding:0 12px;
@@ -2270,8 +2274,8 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                 font-size: 26px;
                 font-style: normal;
                 font-weight: 400;
-                line-height: 48px; /* 184.615% */
-                letter-spacing: 3.9px;
+                line-height: 184.615%;
+                letter-spacing: 0.15rem;
                 &::after{
                     content:"";
                     background-image: url(img/form__arrow--navy.png);
@@ -2309,7 +2313,7 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
             &__consult{
                 &__button{
                     font-size: 24px;
-                    letter-spacing: 3px;
+                    letter-spacing: 0.125rem;
                     &::after{
                         right:8%;
                     }
@@ -2328,7 +2332,7 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                 font-size: 24px;
                 font-style: normal;
                 font-weight: 700;
-                letter-spacing: 4.8px;
+                letter-spacing: 0.2rem;
                 text-transform: uppercase;
                 margin-bottom: 8px;
             }
@@ -2339,8 +2343,8 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                 font-size: 14px;
                 font-style: normal;
                 font-weight: 500;
-                line-height: 32px; /* 228.571% */
-                letter-spacing: 1.4px;
+                line-height:228.571%;
+                letter-spacing: 0.1rem;
             }
         }&__title{
             color: #000;
@@ -2349,8 +2353,8 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
             font-size: 40px;
             font-style: normal;
             font-weight: 400;
-            line-height: 72px; /* 180% */
-            letter-spacing: 6px;
+            line-height:180% ;
+            letter-spacing: 0.15rem;
             margin-top:48px;
         }
         &__border{
@@ -2366,9 +2370,9 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
             font-size: 16px;
             font-style: normal;
             font-weight: 500;
-            line-height: 32px; /* 200% */
+            line-height:200%;
             margin-bottom:100px;    
-            letter-spacing: 0.8px;
+            letter-spacing: 0.15rem;
         }
         &__list{
             width:100%;
@@ -2397,7 +2401,7 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                     font-size: 20px;
                     font-style: normal;
                     font-weight: 500;
-                    line-height: 36px; /* 180% */
+                    line-height: 180%; 
                     letter-spacing: 2px;
                     border-bottom:solid 1px #000;
                     padding:36px 0;
@@ -2409,8 +2413,8 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                     font-size: 16px;
                     font-style: normal;
                     font-weight: 400;
-                    line-height: 32px; /* 200% */
-                    letter-spacing: 0.8px;
+                    line-height: 200%; 
+                    letter-spacing: 0.05rem;
                     padding:36px 0;
                     width:85%;
                     
@@ -2444,8 +2448,8 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                 font-size: 24px;
                 font-style: normal;
                 font-weight: 700;
-                line-height: 86px; /* 358.333% */
-                letter-spacing: 4.8px;
+                line-height: 358.333% ;
+                letter-spacing:0.2rem;
             }
             &__sub{
                 color: #FFF;
@@ -2454,8 +2458,8 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                 font-size: 14px;
                 font-style: normal;
                 font-weight: 500;
-                line-height: 32px; /* 228.571% */
-                letter-spacing: 1.4px;
+                line-height: 228.571%;
+                letter-spacing: 0.1rem;
             }
         }
         &__list{
@@ -2464,8 +2468,8 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
             font-size: 16px;
             font-style: normal;
             font-weight: 500;
-            line-height: 32px; /* 200% */
-            letter-spacing: 0.8px;
+            line-height:200%;
+            letter-spacing: 0.05rem;
             display:grid;
             grid-template-columns: 1fr 4fr;
             column-gap: 16px;
@@ -2501,7 +2505,7 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                 font-size: 24px;
                 font-style: normal;
                 font-weight: 700;
-                letter-spacing: 4.8px;
+                letter-spacing: 0.2rem;
                 text-transform: uppercase;margin-bottom: 8px;
             }
             &__sub{
@@ -2511,8 +2515,8 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                 font-size: 14px;
                 font-style: normal;
                 font-weight: 500;
-                line-height: 32px; /* 228.571% */
-                letter-spacing: 1.4px;
+                line-height: 228.571%;
+                letter-spacing: 0.1rem;
             }
         }
         &__list{
@@ -2553,8 +2557,8 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                         font-size: 20px;
                         font-style: normal;
                         font-weight: 500;
-                        line-height: 32px; /* 160% */
-                        letter-spacing: 1px;
+                        line-height:  160%;
+                        letter-spacing: 0.05rem;
                     }
                     &__desc{
                         color: #000;
@@ -2562,8 +2566,8 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                         font-size: 16px;
                         font-style: normal;
                         font-weight: 400;
-                        line-height: 32px; /* 200% */
-                        letter-spacing: 0.8px;
+                        line-height: 200%;
+                        letter-spacing: 0.05rem;
                         margin-bottom: 30px;
                     }
                 }
@@ -2614,8 +2618,8 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
             font-size: 14px;
             font-style: normal;
             font-weight: 500;
-            line-height: 64px; /* 457.143% */
-            letter-spacing: 0.7px;            
+            line-height:  457.143% ;
+            letter-spacing: 0.05rem;            
         }
     }
 }
