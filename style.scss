@@ -449,10 +449,7 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                         width:100%;
                         height:100%;
                     }
-                    @include tb{
-                        width:70vw;
-                        margin-left: -5px;
-                    }
+
                 }
             }
         }
@@ -559,7 +556,10 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                         font-size: 28px;
                     }
                     &__under{
-                        width:70vw;
+                        width:40vw;
+                        @include tb{
+                            width:50vw;
+                        }
                     }
                 }
                 &__sub{
