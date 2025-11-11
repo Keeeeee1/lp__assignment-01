@@ -22,11 +22,14 @@ body{
 }
 .promise__inner{
     padding:120px 0 180px 0;
+    @include custom02{
+        padding:10% 0 15% 0 ;
+    }
 }
 .gallery-margin{
     margin:100px 0 150px 0;
     @include custom02{
-        margin-bottom:80px;
+        margin:8% 0 12% 0;
     }
 }
 .thumbs-swiper{
@@ -381,9 +384,13 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                 line-height: 169.643%;
                 letter-spacing: 0.7rem;
                 padding-bottom:48px;
+                @include custom00{
+                    padding-bottom: 36px;
+                }
                 @include custom01{
                     font-size:48px;
-                    padding-bottom:36px;
+                    line-height: 150%;
+                    padding-bottom:30px;
                 }
                 &__under{
                     width:570px;
@@ -417,6 +424,9 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                 padding: 12px 0;
                 margin-top:8px;
                 text-transform: uppercase;
+                @include custom01{
+                    padding:8px;
+                }
                 @include tb{
                     font-size: 12px;
                 }
@@ -432,7 +442,7 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                     margin-top:48px;
                     margin-bottom: 16px;
                     @include custom01{
-                        margin-top:36px;
+                        margin-top:30px;
                     }
                     @include tb{
                         font-size: 16px;
@@ -677,6 +687,7 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                 // max-width:700px;
                 width:90%;
                 gap:0;
+                padding:7% 0 5% 0;
             }
             @include tb{
                 // max-width:$sp;
@@ -871,9 +882,8 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
         margin-left:auto;
         padding-left:48px;
         padding-bottom: 200px;
-        @include pc{
-            padding-left:48px;
-            padding-right:48px;
+        @include custom02{
+            padding:0 4% 16% 4%;
         }
         &__left{
             padding-bottom:28px;
@@ -926,8 +936,10 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                 font-weight: 400;
                 line-height: 200%;
                 letter-spacing: 0.1rem;
-                margin:125px 0 75px 0;
-                // white-space: nowrap;
+                padding:125px 0 75px 0;
+                @include custom02{
+                    padding:10% 0 6% 0; 
+                }
                 @include tb{
                     font-size: 32px;
                 }
@@ -1008,11 +1020,13 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
     &__point{
         background-image: url(img/point__bg.png);
         width:100%;
-        min-height:700px;
         background-size:cover;
         text-align:center;
         padding-top:72px;
         padding-bottom:72px;
+        @include custom02{
+            padding:6% 0 6% 0;
+        }
         &__eyebrow{
             &__main{
                 color: #000;
@@ -1038,7 +1052,6 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                 font-weight: 500;
                 line-height: 228.571%;
                 letter-spacing: 0.1rem;
-
             }
         }
         &__title{
@@ -1051,6 +1064,7 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
             letter-spacing: 0.15rem;
             margin-top:32px;
             margin-bottom:24px;
+            margin:2.5% 0 2% 0;
             @include tb{
                 font-size: 32px;
             }
@@ -1067,6 +1081,9 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
         &__desc{
             margin-bottom:48px;
             margin-top:18px;
+            @include custom02{
+                margin:4% 0 1.5% 0;
+            }
             & p{
                 color: #000;
                 text-align: center;
@@ -1129,6 +1146,9 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
         &__design{
             width:100%;
             padding:140px 0 200px 0;
+            @include custom02{
+                padding:12% 0 18% 0;
+            }
             &__number{
                 display: inline-block;
                 color: #000;
@@ -1164,9 +1184,7 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                         background-size: contain;
                         top:-120%;
                         right:0;
-                        // transform: translateX(-50%);
                         background-repeat: no-repeat;
-                        @include tb{}
                     }
                     &__main{
                         color: #000;
@@ -1217,6 +1235,9 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                     letter-spacing: 2.4px;
                     margin-top:66px;
                     margin-bottom:33px;
+                    @include custom02{
+                        margin:5.5% 0 2.8%;
+                    }
                     @include tb{
                         font-size: 20px;
                     }
@@ -1245,6 +1266,9 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                 width:100%;
                 background: #F8F8F8;
                 padding:140px 0 150px 0;
+                @include custom02{
+                    padding:12% 0 13% 0 ;
+                }
                 &::before{
                     content:"";
                     width:1px;
@@ -1257,6 +1281,9 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                 &__title{
                     text-align: center;
                     padding-bottom:100px ;
+                    @include custom02{
+                        padding-bottom: 8%;
+                    }
                     &__sub{
                         color: #000;
                         text-align: center;
@@ -1478,6 +1505,9 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
         &__land-cost{
             width:100%;
             padding:140px 0 200px 0;
+            @include custom02{
+                padding:12% 0 18% 0;
+            }
             &__number{
                 color: #000;
                 font-family: "Lato";
@@ -1595,6 +1625,9 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                 width:100%;
                 background-color: rgb(248, 248, 248);
                 padding:140px 0 ;
+                @include custom02{
+                    padding:12% 0;
+                }
                 &::before{
                     content:"";
                     width:1px;
@@ -1631,6 +1664,9 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
         &__performance{
             width:100%;
             padding:140px 0;
+            @include custom02{
+                padding:12% 0;
+            }
             &__number{
                 color: #000;
                 font-family: "Lato";
@@ -1831,7 +1867,6 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                             @include sp{
                                 font-size: 12px;
                             }
-              
                         }
                     }
                 }
@@ -1841,6 +1876,9 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
             background-color: #F8F8F8 ;
             width:100%;
             padding:140px 0 200px 0;
+            @include custom02{
+                padding:12% 0 18% 0;
+            }
             &__number{
                 border-bottom:2px solid #3A3A3A;
                 display: inline-block;
@@ -2069,6 +2107,9 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                 line-height:123.077%;
                 letter-spacing: 0.1rem;
                 margin-bottom: 80px;
+                @include custom02{
+                    margin-bottom:7.5%;
+                }
                 @include tb{
                     font-size: 32px;
                 }
@@ -2255,6 +2296,9 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
             line-height:180%;
             letter-spacing: 0.15rem;
             padding:54px 0 50px 0;
+            @include custom02{
+                padding:5% 0 4%;
+            }
             @include tb{
                 font-size: 32px;
             }
@@ -2280,6 +2324,9 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
             line-height: 200%;
             letter-spacing: 0.05rem;
             margin: 35px 0 120px 0;
+            @include custom02{
+                margin:3% 0 10% 0;
+            }
             @include tb{
                 font-size: 14px;
                 padding:0 12px;
@@ -2375,6 +2422,9 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
         flex-direction: column;
         align-items: center;
         width:100%;
+        @include custom02{
+            padding:6% 0 8% 0;
+        }
         &__title{
             max-width: 500px;
             width:75%;
@@ -2399,6 +2449,9 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
         &__amazon{
             width:250px;
             margin-top:50px;
+            @include custom02{
+                margin-top: 4%;;
+            }
             & img{
                 width:100%;
             }
@@ -2406,6 +2459,9 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
         &__lead{
             text-align: center;
             margin-bottom: 45px;
+            @include custom02{
+                margin-bottom:4%;
+            }
             .br-pc{
                 display: none;
             }
@@ -2520,6 +2576,9 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
     &__form{
         padding:120px 0;
         text-align: center;
+        @include custom02{
+            padding:10% 0 ;
+        }
         &__eyebrow{
             &__main{
                 color: #000;
@@ -2551,6 +2610,9 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                 letter-spacing:0.1rem;
                 margin-top:16px;
                 margin-bottom:40px;
+                @include custom02{
+                    margin:1.5% 0 3.5% 0;
+                }
             }
         }
         &__lead{
@@ -2563,6 +2625,9 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
             line-height: 200%;
             letter-spacing: 0.05rem;
             margin-bottom:120px;
+            @include custom02{
+                margin-bottom:10%;
+            }
             @include tb{
                 font-size: 13px;
             }
@@ -2613,6 +2678,9 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                 display: block;
                 > .section__form__option__object:first-child {
                     margin-bottom: 30px;
+                    @include custom02{
+                        margin-bottom: 2.5%;
+                    }
                 }
             }
         }
@@ -2638,7 +2706,6 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                 @include sp{
                     font-size:20px;
                 }
-
                 &::after{
                     content:"";
                     background-image: url(img/form__arrow--navy.png);
@@ -2652,7 +2719,6 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                     right:50px;
                     top:50%;
                     transform: translateY(-50%);
-
                 }
                 .section__form__option__object.is-active & {
                     background-color: #24385D;
@@ -2693,6 +2759,7 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
     &__company-profile{
         padding:120px 0;
         background-color: #F8F8F8;
+        padding:10% 0 ;
         &__eyebrow{
             &__main{
                 color: #000;
@@ -2731,6 +2798,9 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
             line-height:180% ;
             letter-spacing: 0.15rem;
             margin-top:48px;
+            @include custom02{
+                margin-top:4%;
+            }
             @include tb{
                 font-size: 32px;
             }
@@ -2744,6 +2814,9 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
             width:60px;
             background-color:#000;
             margin:50px auto 30px;
+            @include custom02{
+                margin:4% auto 2.5%;
+            }
         }
         &__lead{
             color: #000;
@@ -2755,6 +2828,9 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
             line-height:200%;
             margin-bottom:100px;    
             letter-spacing: 0.15rem;
+            @include custom02{
+                margin-bottom: 8%;
+            }
             @include tb{
                 font-size: 14px;
             }
@@ -2851,6 +2927,9 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
     &__company-about{
         background-color: #000;
         padding:150px  0;
+        @include custom02{
+            padding:12% 0;
+        }
         &__eyebrow{
             margin-bottom: 36px;
             &__main{
@@ -2921,9 +3000,15 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
     }
     &__access-map{
         padding:120px 0 90px 0 ;
+        @include custom02{
+            padding:10% 0 7.5% 0;
+        }
         &__eyebrow{
             text-align: center;
             margin-bottom: 100px;
+            @include custom02{
+                margin-bottom: 8.5%;
+            }
             &__main{
                 color: #000;
                 text-align: center;
@@ -2959,6 +3044,9 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
             --gap: 75px;
             column-gap: var(--gap);
             margin-bottom: 100px;
+            @include custom02{
+                margin-bottom: 8.5%;
+            }
             @include tb{
                 grid-template-columns: 1fr;
                 row-gap: 30px;
@@ -2993,6 +3081,9 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                         font-weight: 500;
                         line-height:  160%;
                         letter-spacing: 0.05rem;
+                        @include custom02{
+                            margin: 3% 0 2% 0;
+                        }
                         @include tb{
                             font-size: 16px;
                         }
@@ -3009,13 +3100,15 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                         line-height: 200%;
                         letter-spacing: 0.05rem;
                         margin-bottom: 30px;
+                        @include custom02{
+                            margin-bottom:2.5% ;
+                        }
                         @include tb{
                             font-size: 14px;
                         }
                         @include sp{
                             font-size: 12px;
                         }
-
                     }
                 }
                 & iframe{               
@@ -3035,7 +3128,8 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
             }
         }
         &__img{
-            width:278px;
+            max-width:278px;
+            width:40%;
             margin:0 auto;
             & img{
                 width:100%;
@@ -3052,6 +3146,12 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
             width:100%;
             padding:110px 24px 110px 24px ;
             margin:0 auto;
+            @include custom02{
+                padding:9% 2%;
+            }
+            @include tb{
+                width:70%;
+            }
             & img{
                 width:100%;
             }
@@ -3067,7 +3167,16 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
             font-style: normal;
             font-weight: 500;
             line-height:  457.143% ;
-            letter-spacing: 0.05rem;            
+            letter-spacing: 0.05rem;  
+            @include custom02{
+                padding:3% 0;
+            }  
+            & p{
+                @include tb{
+                    width:70%;
+                    margin: 0 auto;
+                }
+            }        
         }
     }
 }
