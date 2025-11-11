@@ -445,6 +445,15 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                     max-width:492px;
                     height:auto;
                     margin-left:-10px;
+                    @include custom02{
+                        width:400px;
+                    }
+                    @include pc{
+                        width:360px;
+                    }
+                    @include tb{
+                        width:320px;
+                    }
                     & img{
                         width:100%;
                         height:100%;
@@ -557,8 +566,11 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                     }
                     &__under{
                         width:40vw;
-                        @include tb{
+                        @include pc{
                             width:50vw;
+                        }
+                        @include tb{
+                            width:60vw;
                         }
                     }
                 }
