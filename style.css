@@ -419,23 +419,17 @@ body.no-scroll {
   height: 100vh;
   background-image: url(img/fv-bg.jpg);
   background-size: cover;
+  background-position: center center;
   color: #FFF;
 }
 .section__fv__title {
   position: absolute;
   top: 35.7%;
   left: 18.85%;
-  height: 100vh;
 }
 @media screen and (max-width: 1640px) {
   .section__fv__title {
-    top: 27%;
-    left: 20%;
-  }
-}
-@media screen and (max-width: 1240px) {
-  .section__fv__title {
-    top: 20%;
+    top: 25%;
     left: 23%;
   }
 }
@@ -455,9 +449,10 @@ body.no-scroll {
   letter-spacing: 0.7rem;
   padding-bottom: 48px;
 }
-@media screen and (max-width: 1640px) {
+@media screen and (max-width: 1440px) {
   .section__fv__title__main {
-    font-size: 50px;
+    font-size: 48px;
+    padding-bottom: 36px;
   }
 }
 .section__fv__title__main__under {
@@ -507,6 +502,11 @@ body.no-scroll {
   letter-spacing: 0.2rem;
   margin-top: 48px;
   margin-bottom: 16px;
+}
+@media screen and (max-width: 1440px) {
+  .section__fv__title__bottom__sub {
+    margin-top: 36px;
+  }
 }
 @media screen and (max-width: 768px) {
   .section__fv__title__bottom__sub {
@@ -628,7 +628,7 @@ body.no-scroll {
     display: none;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1080px) {
   .section__fv {
     background-image: url(img/fv-bg--sp.png);
     background-size: cover;
@@ -642,17 +642,17 @@ body.no-scroll {
     line-height: 168.75%;
   }
 }
-@media screen and (max-width: 768px) and (max-width: 768px) {
+@media screen and (max-width: 1080px) and (max-width: 768px) {
   .section__fv__title__main {
     font-size: 38px;
   }
 }
-@media screen and (max-width: 768px) and (max-width: 375px) {
+@media screen and (max-width: 1080px) and (max-width: 375px) {
   .section__fv__title__main {
     font-size: 28px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1080px) {
   .section__fv__title__main__under {
     width: 70vw;
   }
@@ -664,43 +664,43 @@ body.no-scroll {
     font-size: 16px;
   }
 }
-@media screen and (max-width: 768px) and (max-width: 768px) {
+@media screen and (max-width: 1080px) and (max-width: 768px) {
   .section__fv__title__bottom__sub {
     font-size: 14px;
   }
 }
-@media screen and (max-width: 768px) and (max-width: 375px) {
+@media screen and (max-width: 1080px) and (max-width: 375px) {
   .section__fv__title__bottom__sub {
     font-size: 12px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1080px) {
   .section__fv__title__bottom__main p {
     font-size: 25px;
     letter-spacing: 0.1rem;
   }
 }
-@media screen and (max-width: 768px) and (max-width: 768px) {
+@media screen and (max-width: 1080px) and (max-width: 768px) {
   .section__fv__title__bottom__main p {
     font-size: 20px;
   }
 }
-@media screen and (max-width: 768px) and (max-width: 375px) {
+@media screen and (max-width: 1080px) and (max-width: 375px) {
   .section__fv__title__bottom__main p {
     font-size: 18px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1080px) {
   .section__fv__title__bottom__main p span {
     font-size: 21px;
   }
 }
-@media screen and (max-width: 768px) and (max-width: 768px) {
+@media screen and (max-width: 1080px) and (max-width: 768px) {
   .section__fv__title__bottom__main p span {
     font-size: 16px;
   }
 }
-@media screen and (max-width: 768px) and (max-width: 375px) {
+@media screen and (max-width: 1080px) and (max-width: 375px) {
   .section__fv__title__bottom__main p span {
     font-size: 14px;
   }

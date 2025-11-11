@@ -353,6 +353,7 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
         height:100vh;
         background-image: url(img/fv-bg.jpg);
         background-size: cover;
+        background-position: center center;
         color:#FFF;
         &__inner{
             // max-width:1360px;
@@ -363,13 +364,8 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
             position: absolute;
             top:35.7%;
             left:18.85%;
-            height:100vh;
             @include custom00{
-                top:27%;
-                left:20%;
-            }
-            @include custom02{
-                top:20%;
+                top:25%;
                 left:23%;
             }
             @include tb{
@@ -385,8 +381,9 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                 line-height: 169.643%;
                 letter-spacing: 0.7rem;
                 padding-bottom:48px;
-                @include custom00{
-                    font-size:50px;
+                @include custom01{
+                    font-size:48px;
+                    padding-bottom:36px;
                 }
                 &__under{
                     width:570px;
@@ -395,7 +392,6 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                     @include custom02{
                         width:400px;
                     }
-
                     &::after{
                         position:absolute;
                         right:0;
@@ -435,6 +431,9 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                     letter-spacing: 0.2rem;
                     margin-top:48px;
                     margin-bottom: 16px;
+                    @include custom01{
+                        margin-top:36px;
+                    }
                     @include tb{
                         font-size: 16px;
                     }
@@ -542,7 +541,7 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                 display: none;
             }
         }
-        @include tb{
+        @include pc{
             background-image: url(img/fv-bg--sp.png);
             background-size: cover;
             &__inner{
