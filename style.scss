@@ -337,11 +337,11 @@ body{
                 pointer-events: auto;
             }
             @include tb{
-                font-size:32px;
+                font-size:24px;
                 gap:6%;
             }
             @include sp{
-                font-size:24px;
+                font-size:20px;
             }
         }
     }

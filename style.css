@@ -403,13 +403,13 @@ body {
 }
 @media screen and (max-width: 1240px) and (max-width: 768px) {
   .header__right__items {
-    font-size: 32px;
+    font-size: 24px;
     gap: 6%;
   }
 }
 @media screen and (max-width: 1240px) and (max-width: 375px) {
   .header__right__items {
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 
