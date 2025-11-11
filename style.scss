@@ -2453,7 +2453,6 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
             @include sp{
                 font-size: 24px;
             }
-
         }
         &__amazon{
             width:250px;
@@ -2490,12 +2489,11 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                     @include sp{
                         font-size: 20px;
                     }
-
                 }
                 &:nth-of-type(2){
                     color: #CCB504;
                     text-align: center;
-                    font-family: "DIN 2014";
+                    font-family: "DIN 2014","Oswald","noto serif" ;
                     font-size: 77px;
                     font-style: normal;
                     font-weight: 600;

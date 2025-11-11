@@ -2772,7 +2772,7 @@ body.no-scroll {
 .section__visitor-benefits__lead span:nth-of-type(2) {
   color: #CCB504;
   text-align: center;
-  font-family: "DIN 2014";
+  font-family: "DIN 2014", "Oswald", "noto serif";
   font-size: 77px;
   font-style: normal;
   font-weight: 600;
