@@ -334,6 +334,9 @@ body{
             opacity: 0;
             pointer-events: none;
             transition: max-height .3s ease, padding .3s ease, opacity .2s;
+            @include pc{
+                font-size:32px;
+            }
             &> li:last-of-type{
                 margin-top: 15px;
             }
@@ -345,7 +348,7 @@ body{
             }
             @include tb{
                 font-size:24px;
-                gap:6%;
+                gap:4%;
             }
             @include sp{
                 font-size:20px;
@@ -1540,7 +1543,7 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                             font-size: 20px;
                         }
                         @include sp{
-                            font-size:18px;
+                            font-size:15px;
                         }
                     }
                     &__sub{
@@ -1858,6 +1861,7 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                     }
                     @include tb{
                         font-size: 20px;
+                        letter-spacing: 0.03rem;
                     }
                     @include sp{
                         font-size:18px;
@@ -1955,7 +1959,7 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                                 font-size: 20px;
                             }
                             @include sp{
-                                font-size:18px;
+                                font-size:15px;
                             }
                         }
                         &__sub{
@@ -2152,7 +2156,7 @@ body.no-scroll{ overflow: hidden; }     // 開いている間は背面スクロ�
                                 font-size: 20px;
                             }
                             @include sp{
-                                font-size:18px;
+                                font-size:15px;
                             }
                         }
                         &__sub{
